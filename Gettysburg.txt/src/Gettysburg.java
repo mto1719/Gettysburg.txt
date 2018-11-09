@@ -1,14 +1,21 @@
 
 public class Gettysburg {
 
-public static void main(String[] args);{
+public static void main(String[] args);
+    {
+     ArrayList<String> GettysburgAddress = new ArrayList<String>();
+     Scanner file = new Scanner(new File(filename));
+      while (file.hasNext()) 
+	{
+	 word = file.next();
+	 } 
     int count = 0;
     double sum = 0;
     double average = 0;
 
-    while (sc.hasNext()) {
+    while (file.hasNext()) {
 
-        String userInput = sc.next();
+        String userInput = file.next();
 
         double charNum = userInput.length();
         sum = charNum + sum;
@@ -18,10 +25,7 @@ public static void main(String[] args);{
         if (count > 0) {
             average = sum / count;
         }
-
-
         System.out.println("Average word length = " + average);
-
         }
 
 }
