@@ -4,7 +4,7 @@ public class Gettysburg {
 public static void main(String[] args);
     {
      ArrayList<String> GettysburgAddress = new ArrayList<String>();
-     Scanner file = new Scanner(new File(filename));
+     Scanner file = new Scanner(new File(GettysburgAddress));
       while (file.hasNext()) 
 	{
 	 word = file.next();
@@ -25,7 +25,15 @@ public static void main(String[] args);
         if (count > 0) {
             average = sum / count;
         }
+	int largestString = Str.get(0).length();
+	int index = 0;
+	if(Str.get(i).length() > largestString) 
+	{
+        largestString = Str.get(i).length();
+        index = i;
+        }
         System.out.println("Average word length = " + average);
+	System.out.println("Index " + index + " "+ Str.get(index) + " " + "is the largest and is size " + largestString);
         }
 
 }
