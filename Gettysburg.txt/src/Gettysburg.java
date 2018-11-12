@@ -20,8 +20,6 @@ public static void main(String[] args);
         double charNum = userInput.length();
         sum = charNum + sum;
         count++;
-
-        double average = 0;
         if (count > 0) {
             average = sum / count;
         }
