@@ -3,11 +3,10 @@
  */
 import java.util.Scanner;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 public class Gettysburg {
 
-public static void main(String[] args) throws FileNotFoundException
+public static void main(String[] args) 
     {
 	int count = 0;
    	double sum = 0;
