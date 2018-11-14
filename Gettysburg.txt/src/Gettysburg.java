@@ -10,8 +10,8 @@ public class Gettysburg {
 public static void main(String[] args) throws FileNotFoundException
     {
 	int count = 0;
-    double sum = 0;
-    double average = 0;
+   	double sum = 0;
+    	double average = 0;
 	ArrayList<String> word = new ArrayList<String>();​
 	Scanner file = new Scanner(new File("S:\\git\\GettysburgA.txt\\Gettysburg.txt\\src\\Gettysburg"));
 	while (file.hasNext()) 
@@ -34,7 +34,7 @@ public static void main(String[] args) throws FileNotFoundException
 	{
         largestString = wordL;
     }
-    System.out.println("Average word length = " + average);
+    	System.out.println("Average word length = " + average);
 	System.out.println("the largest word is " + largestString);
     }
 }
