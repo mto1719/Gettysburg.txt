@@ -14,31 +14,27 @@ double sum = 0;
 double average = 0;
 int largestString = 0;
 ArrayList<String> words = new ArrayList<String>();
-Scanner in = new Scanner(new File("C:\\Users\\ThePC\\eclipse-workspace\\GettysburgProject\\src\\GettysburgAddress"));
-while (in.hasNextLine())
+Scanner in = new Scanner(new File("Gettysburg"));
+while (in.hasNext())
 {
-words.add(in.nextLine());
+words.add(in.next());
 }
-while (in.hasNextLine()) 
+while (in.hasNext()) 
 {
-String userInput = in.next();
-double charNum = userInput.length();
+String word = in.next();
+double charNum = word.length();
 sum = charNum + sum;
 count++;
+}
 if (count > 0) 
 {
 average = sum / count;
 }
-for(int i = 0; i < words.size(); i++)
+for(int i = 0; i < word.size(); i++)
 {
-if(words.get(i).length() > largestString) 
-{
-largestString = words.get(i).length();
+largestString = word.size();
 }
-}
-in.close();
 System.out.println("Average word length = " + average);
-System.out.println("The longest word is = " + largestString);
-}
+System.out.println("The longest word is " + largestString);
 }
 }
